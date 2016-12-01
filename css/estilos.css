@@ -1,0 +1,417 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,400);
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #4d4d4d;
+    margin: 0;
+}
+
+#contenedor-encabezado {
+    position: relative;
+    display: block;
+}
+
+#contenedor-naranja {
+    position: relative;
+    display: block;
+    background-color: #ee8416;
+    border-bottom: 1px solid #fff;
+    height: 70px;
+}
+
+#contenedor-degradado {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(#e5e5e5, #fff);
+    background-image: -moz-linear-gradient(#e5e5e5, #fff);
+    background-image: linear-gradient(#e5e5e5, #fff);
+    height: 75px;
+}
+
+#logo {
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background-color: #fff;
+    background-image: url(../imagenes/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 3px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-indent: 900px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 5px 10px rgba(153,153,153,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(153,153,153,0.2);
+    left: 50%;
+    margin-left: -400px;                                                                                                                                
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    box-shadow: 0 5px 10px rgba(153,153,153,0.2);
+}
+
+#busqueda {
+	position: relative;
+	display: block;
+	font-size: 14px;
+	color: #4d4d4d;
+	font-weight: 300;
+	border: none;
+	padding: 5px 10px 6px;
+	margin-top: 25px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url(../imagenes/lupa.png) no-repeat 430px center #fff;
+	outline: none;
+}
+
+#contenedor-perfil {
+	position: relative;
+	display: block;
+	height: 70px;
+	text-align: right;
+}
+
+#caja-perfil {
+	position: relative;
+	display: inline-block;
+	background-color: #4d4d4d;
+	height: 70px;
+	padding: 5px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: visible;
+	cursor: pointer;
+    z-index: 1;
+}
+
+#caja-perfil:hover {
+	background-color: #686868;
+}
+
+#caja-perfil > *
+{
+	position: relative;
+	display: block;
+	float: left;
+}
+
+#nombre-perfil {
+	text-align: left;
+}
+
+#nombre-perfil > span {
+	position: relative;
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+#nombre-perfil > div {
+	position: relative;
+	display: block;
+	color: #fff;
+	font-size: 17px;
+	padding-right: 30px;
+	margin-right: 20px;
+	background: url(../imagenes/flecha-perfil.png) no-repeat right top;
+}
+
+#caja-perfil:hover #nombre-perfil > div
+{
+	background-position: bottom right;
+}
+
+#caja-perfil nav {
+    position: absolute;
+    display: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    padding: 7px 20px;
+    top: 54px;
+    right: 90px;
+}
+
+#caja-perfil nav a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #999;
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#caja-perfil nav a:last-child {
+    border: none;
+}
+
+#caja-perfil nav a:hover {
+    color: #666;
+}
+
+#caja-perfil:hover nav {
+    display: block;
+}
+
+#menu-principal {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+}
+
+#menu-principal a,
+#menu-principal span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #4d4d4d;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#menu-principal a:hover,
+#menu-principal span:hover {
+    color: #fff;
+    background-color: #73c728;
+}
+
+#menu-principal span {
+    padding-right: 25px;
+    background-image: url(../imagenes/flecha-menu-principal.png);
+    background-repeat: no-repeat;
+    background-position: 112px 5px;
+}
+
+#menu-principal span:hover {
+    background-position: 112px -19px;
+}
+
+h2 {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    color: #ed8115;
+    margin-bottom: 15px;
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ed8115;
+}
+
+h1 {
+    position: relative;
+    display: block;
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#contenido {
+    margin-top: 20px;
+}
+
+.fecha-publicacion {
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+#contenidos-principales img {
+    margin-bottom: 20px;
+}
+
+.mosaico-principal {
+    position: relative;
+    display: block;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 2px solid #73c728;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.mosaico-principal span {
+    position: relative;
+    display: block;
+    font-size: 24px;
+    color: #4d4d4d;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.mosaico-principal div {
+    color: #4d4d4d;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.mosaico-principal:hover {
+    border-color: #ed8115;
+}
+
+.entrada-reciente {
+    position: relative;
+    display: block;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 15px;
+    color: #4d4d4d;
+}
+
+#recientes .entrada-reciente:first-child {
+    padding-top: 0;
+}
+
+.entrada-reciente strong,
+.entrada-agenda strong {
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.entrada-reciente div div,
+.entrada-agenda a {
+    display: inline;
+    color: #5a321e;
+    text-decoration: underline;
+}
+
+.entrada-reciente span {
+    position: relative;
+    display: block;
+    font-size: 11px;
+    margin-top: 20px;
+}
+
+#ver-mas {
+    position: relative;
+    display: block;
+    color: #999;
+    background: url(../imagenes/flecha-ver-mas.png) no-repeat 180px 3px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#recientes {
+    margin-bottom: 30px;
+}
+
+#chiste-del-dia p {
+    font-style: italic;
+    font-size: 14px;   
+}
+
+#agenda {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.entrada-agenda {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.entrada-agenda div:first-child {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    color: #ed8115;
+}
+
+#agenda .entrada-agenda:first-of-type {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: -15px;
+}
+
+#agenda .entrada-agenda:first-of-type div:first-child {
+    background-color: #ed8115;
+    font-size: 18px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#agenda .entrada-agenda:first-of-type div:last-child {
+    margin-top: 10px;
+}
+
+h2 span {
+    font-size: 12px;
+    color: #5a321e;
+}
+
+#contenedor-pie,
+#contenedor-pie-secundario {
+    position: relative;
+    display: block;
+}
+
+#contenedor-pie {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+#contenedor-pie-secundario {
+    background-color: #4d4d4d;
+    padding: 10px 0;
+    color: #fff;
+}
+
+#contenedor-pie a {
+    position: relative;
+    display: block;
+    color: #4d4d4d;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+#contenedor-pie span {
+    text-decoration: underline;
+    color: #5a321e;
+}
+
+#contenedor-pie .etiqueta {
+    position: relative;
+    display: inline-block;
+    color: #4d4d4d;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #e5e5e5;
+}
+
+#contenedor-pie .etiqueta:hover {
+    background-color: #4d4d4d;
+    color: #e5e5e5;
+}
+
+#contenedor-pie-secundario a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+#contenedor-pie-secundario a:hover {
+    text-decoration: underline;
+}

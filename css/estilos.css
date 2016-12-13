@@ -170,7 +170,7 @@ body {
     margin-top: 10px;
 }
 
-#menu-principal a,
+#menu-principal > a,
 #menu-principal span {
     position: relative;
     display: inline-block;
@@ -182,8 +182,8 @@ body {
     cursor: pointer;
 }
 
-#menu-principal a:hover,
-#menu-principal span:hover {
+#menu-principal > a:hover,
+#menu-principal:hover span {
     color: #fff;
     background-color: #73c728;
 }
@@ -195,7 +195,7 @@ body {
     background-position: 112px 5px;
 }
 
-#menu-principal span:hover {
+#menu-principal:hover span {
     background-position: 112px -19px;
 }
 
@@ -414,4 +414,120 @@ h2 span {
 
 #contenedor-pie-secundario a:hover {
     text-decoration: underline;
+}
+
+#menu-principal nav /*SUBMENU*/{
+    position: relative;
+    display: inline-block;
+    z-index: 1; 
+}
+
+#menu-principal nav > div {
+    position: absolute;
+    display: none;
+    background-color: #f5f5f5;
+    padding: 10px 10px 0;
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+#menu-principal nav:hover > div {
+    display: block;
+}
+
+#menu-principal nav > div > div {
+    position: relative;
+    display: block;
+    width: 460px;
+}
+
+#menu-principal nav > div > div:first-of-type {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    height: 60px;
+}
+
+#menu-principal #mosaicos-menu a {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    text-indent: 900px;
+    overflow: hidden;
+    background-color: #ed8115;
+    background-image: url(../imagenes/mosaicos-novedades.png);
+    background-repeat: no-repeat;
+}
+
+#menu-principal #mosaicos-menu a#recientes-menu {
+    background-position: left top;
+}
+
+#menu-principal #mosaicos-menu a#recientes-menu:hover {
+    background-position: left bottom;
+}
+
+#menu-principal #mosaicos-menu a#destacadas {
+    background-position: -60px top;
+}
+
+#menu-principal #mosaicos-menu a#destacadas:hover {
+    background-position: -60px bottom;
+}
+
+#menu-principal #mosaicos-menu a#agenda-menu {
+    background-position: -120px top;
+}
+
+#menu-principal #mosaicos-menu a#agenda-menu:hover {
+    background-position: -120px bottom;
+}
+
+#menu-principal #mosaicos-menu a#anuncios {
+    background-position: -180px top;
+}
+
+#menu-principal #mosaicos-menu a#anuncios:hover {
+    background-position: -180px bottom;
+}
+
+#menu-principal #mosaicos-menu a#articulos {
+    background-position: -240px top;
+}
+
+#menu-principal #mosaicos-menu a#articulos:hover {
+    background-position: -240px bottom;
+}
+
+#menu-principal #mosaicos-menu a#comunidad {
+    background-position: -300px top;
+}
+
+#menu-principal #mosaicos-menu a#comunidad:hover {
+    background-position: -300px bottom;
+}
+
+#menu-principal #mosaicos-menu a:last-child {
+    margin-right: 0;
+}
+
+#menu-principal #etiquetas-menu a {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #e5e5e5;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+#menu-principal #etiquetas-menu a:hover {
+    background-color: #4d4d4d;
+    color: #e5e5e5;
 }
